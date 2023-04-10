@@ -9,3 +9,9 @@ func TestPrint(t *testing.T) {
 		t.Errorf("print equal fail, source: %s target: %s", msg, eqMsg)
 	}
 }
+
+func BenchmarkPrint(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Print()
+	}
+}
