@@ -18,3 +18,17 @@ func BenchmarkPrint(b *testing.B) {
 		Print()
 	}
 }
+
+func TestSplit(t *testing.T) {
+	val := 10
+	x, y := Split(val)
+	if x != 4 && y != 6 {
+		t.Errorf("test fail, value: %d, x: %d, y: %d", val, x, y)
+	}
+}
+
+func BenchmarkSplit(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Split()
+	}
+}
