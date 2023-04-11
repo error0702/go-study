@@ -15,4 +15,6 @@ func main() {
 	// 定义局部变量
 	var c, python, java = true, false, "no!"
 	fmt.Println(i, j, c, python, java)
+
+	hello.PrintType()
 }
