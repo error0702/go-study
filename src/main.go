@@ -15,6 +15,8 @@ func main() {
 	// 定义局部变量
 	var c, python, java = true, false, "no!"
 	fmt.Println(i, j, c, python, java)
-
+	// 打印别名类型
 	hello.PrintType()
+	// 打印零值
+	hello.PrintZeroVal()
 }
