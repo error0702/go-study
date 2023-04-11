@@ -19,4 +19,6 @@ func main() {
 	hello.PrintType()
 	// 打印零值
 	hello.PrintZeroVal()
+	// 类型转换
+	hello.TypeConvert()
 }
